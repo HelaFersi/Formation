@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="439.0" prefWidth="766.0" style="-fx-background-color: #FFFFFF;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xcode.controllers.AjoutercoursController">
+    
+   <children>
+      <Pane layoutX="112.0" layoutY="33.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox layoutX="-1.0" prefHeight="439.0" prefWidth="171.0" style="-fx-background-color: A65959;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            <children>
+                  <HBox alignment="CENTER" prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="back1" alignment="CENTER" blendMode="SRC_ATOP" mnemonicParsing="false" onAction="#backClient" prefHeight="31.0" prefWidth="109.0" style="-fx-background-color: #414E4D; -fx-background-radius: 100PX; -fx-text-fill: white;" text="Accueil" textAlignment="CENTER" underline="true">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Button>
+                     </children></HBox>
+                  <Button fx:id="MESO" alignment="CENTER" blendMode="SRC_ATOP" mnemonicParsing="false" onAction="#acceuilFormafteur" opacity="0.86" prefHeight="33.0" prefWidth="171.0" snapToPixel="false" style="-fx-background-color: #414E4D #414E4D; -fx-background-radius: 100PX; -fx-text-fill: white;" text="Mes Formations" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+               </children>
+            </VBox>
+            <TextField fx:id="desc" alignment="TOP_LEFT" layoutX="249.0" layoutY="198.0" prefHeight="153.0" prefWidth="196.0" promptText="description" style="-fx-background-radius: 10;" />
+            <TextField fx:id="titre" layoutX="250.0" layoutY="120.0" opacity="0.79" promptText="titre" style="-fx-background-radius: 5;" />
+            <TextField fx:id="duree" layoutX="500.0" layoutY="198.0" prefHeight="31.0" prefWidth="163.0" promptText="duree" style="-fx-background-radius: 5;" />
+            <Button fx:id="bimgo" layoutX="698.0" layoutY="291.0" mnemonicParsing="false" onAction="#chercherI" prefHeight="25.0" prefWidth="11.0" text="..." />
+            <Button fx:id="ajouterC" layoutX="590.0" layoutY="375.0" mnemonicParsing="false" onAction="#ajouterC" prefHeight="25.0" prefWidth="122.0" style="-fx-background-color: #D36A6A;" text="ajouter" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtimg" layoutX="493.0" layoutY="291.0" prefHeight="31.0" prefWidth="205.0" promptText="télécharger des documents " />
+            <MenuBar layoutY="-1.0" prefHeight="32.0" prefWidth="700.0">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Qui sommes nous? " />
+                  <Menu mnemonicParsing="false" text="Besoin d'aide?" />
+               </menus>
+            </MenuBar>
+            <MenuButton layoutX="658.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="109.0" text="Username">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Profil" />
+                  <MenuItem mnemonicParsing="false" text="Mon apprentissage" />
+                  <MenuItem mnemonicParsing="false" text="Accomplissment" />
+                  <MenuItem mnemonicParsing="false" text="Paramétres" />
+                  <MenuItem mnemonicParsing="false" text="Messages" />
+                  <MenuItem mnemonicParsing="false" text="Déconnexion" />
+               </items>
+            </MenuButton>
+            <ComboBox fx:id="niv" layoutX="500.0" layoutY="120.0" onAction="#selectcat" prefHeight="31.0" prefWidth="163.0" promptText="Niveau" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

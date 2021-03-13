@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #FFFFFF;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xcode.controllers.ValidationAdmiController">
+   
+   <children>
+      <AnchorPane layoutX="18.0" prefHeight="600.0" prefWidth="271.0" style="-fx-background-color: #a65959;">
+         <children>
+            <AnchorPane layoutX="-21.0" layoutY="-10.0" prefHeight="614.0" prefWidth="277.0" style="-fx-background-color: #343E3D;">
+               <children>
+                  <Button fx:id="gest" blendMode="SRC_ATOP" layoutX="39.0" layoutY="170.0" mnemonicParsing="false" opacity="0.85" prefHeight="33.0" prefWidth="200.0" style="-fx-background-color: #343E3D; -fx-background-radius: 100PX; -fx-text-fill: white;" text="Gérer mon profil" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="mdp" blendMode="SRC_ATOP" layoutX="39.0" layoutY="211.0" mnemonicParsing="false" opacity="0.85" prefHeight="33.0" prefWidth="200.0" style="-fx-background-color: #343E3D; -fx-background-radius: 100PX; -fx-text-fill: white;" text="Changer mot de passe" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="role" blendMode="SRC_ATOP" layoutX="39.0" layoutY="254.0" mnemonicParsing="false" opacity="0.85" prefHeight="33.0" prefWidth="200.0" style="-fx-background-color: #343E3D; -fx-background-radius: 100PX; -fx-text-fill: white;" text="Mes roles" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="event" blendMode="SRC_ATOP" layoutX="39.0" layoutY="337.0" mnemonicParsing="false" opacity="0.85" prefHeight="33.0" prefWidth="200.0" style="-fx-background-color: #343E3D; -fx-background-radius: 100PX; -fx-text-fill: white;" text="Mes évenements" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="favoris" blendMode="SRC_ATOP" layoutX="39.0" layoutY="428.0" mnemonicParsing="false" opacity="0.85" prefHeight="33.0" prefWidth="200.0" style="-fx-background-color: #343E3D; -fx-background-radius: 100PX; -fx-text-fill: white;" text="Favories" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="form" blendMode="SRC_ATOP" layoutX="39.0" layoutY="298.0" mnemonicParsing="false" onAction="#acceuilFor" prefHeight="33.0" prefWidth="200.0" style="-fx-background-color: #414e4d; -fx-background-radius: 100PX; -fx-text-fill: white;" text="Mes formations" textAlignment="CENTER" underline="true">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="event1" blendMode="SRC_ATOP" layoutX="39.0" layoutY="385.0" mnemonicParsing="false" opacity="0.85" prefHeight="33.0" prefWidth="200.0" style="-fx-background-color: #343E3D; -fx-background-radius: 100PX; -fx-text-fill: white;" text="Mes œuvres" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets right="1.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </AnchorPane>
+      <Pane layoutX="289.0" prefHeight="604.0" prefWidth="713.0">
+         <children>
+            <Label fx:id="adesco" alignment="TOP_LEFT" layoutX="41.0" layoutY="417.0" prefHeight="160.0" prefWidth="291.0" style="-fx-background-color: F4F0F0;" />
+            <ImageView fx:id="imgV" fitHeight="160.0" fitWidth="325.0" layoutX="194.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="lieu" alignment="TOP_LEFT" layoutX="384.0" layoutY="346.0" prefHeight="54.0" prefWidth="271.0" style="-fx-background-color: F4F0F0;" />
+            <Label fx:id="aprixo" alignment="TOP_LEFT" layoutX="384.0" layoutY="417.0" prefHeight="54.0" prefWidth="271.0" style="-fx-background-color: F4F0F0;" />
+            <Button fx:id="valider" layoutX="516.0" layoutY="523.0" mnemonicParsing="false" onAction="#validerO" prefHeight="25.0" prefWidth="122.0" style="-fx-background-color: #D36A6A;" text="valider" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="adomaino" alignment="TOP_LEFT" layoutX="51.0" layoutY="177.0" prefHeight="54.0" prefWidth="271.0" style="-fx-background-color: F4F0F0;" />
+            <Label fx:id="niv" alignment="TOP_LEFT" layoutX="384.0" layoutY="257.0" prefHeight="54.0" prefWidth="271.0" style="-fx-background-color: F4F0F0;" />
+            <Circle fill="#f4f0f0" layoutX="638.0" layoutY="77.0" radius="53.0" stroke="#343e3d" strokeType="INSIDE" />
+            <Label fx:id="lang" alignment="TOP_LEFT" layoutX="381.0" layoutY="177.0" prefHeight="54.0" prefWidth="271.0" style="-fx-background-color: F4F0F0;" />
+            <Label fx:id="date" alignment="TOP_LEFT" layoutX="51.0" layoutY="257.0" prefHeight="54.0" prefWidth="271.0" style="-fx-background-color: F4F0F0;" />
+            <Label fx:id="duree" alignment="TOP_LEFT" layoutX="51.0" layoutY="346.0" prefHeight="54.0" prefWidth="271.0" style="-fx-background-color: F4F0F0;" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
